@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head> 
+        <meta charset="utf-8"> 
+        <title>表格居中html</title>
+        <style>
+            body {
+               margin: 0;
+               }
+                table {
+                    border-collapse: collapse;
+                    background-color:rgb(99, 104, 98);
+                    color:white;
+                    border: 1px solid black;
+                }
+                 
+                div {
+                 background: #4783f3}
+
+                select{
+                    padding-right: 50px;
+                }
+                textarea{ resize:none;}
+                
+                .column {
+                  float: left;
+                 padding: 0px;
+                }
+                
+                .column.left {
+                 background-color: #4783f3; color: white;
+                  width: 20%;
+                  text-align: center;
+                  }
+                .column.right {
+                    background-color: #4783f3; color: white;
+                  width: 20%;
+                  text-align: center;
+                  }
+
+                .column.middle {
+                     width: 60%;
+                    }
+                 
+                .row:after {
+                  content: "";
+                 display: table;
+                 clear: both;
+                  }
+                
+                  .center1 {
+                  text-align: center;
+                  background-color: #000000;
+                  color: white;
+                  border: 20px solid black;
+                  margin: 5px;
+                       }
+
+                   .center2 {
+                  text-align: center;
+                  background-color: #000000;
+                  color: white;
+                  border: 20px solid black;
+                  margin: 5px;
+                       }    
+
+
+            </style>
+</head>
+
+<body>
+    
+<p class="center1">这里是顶栏
+</p>    
+    
+    
+<div class="row">
+    <div class="column column left">
+     <p class="a">这里是左栏    
+        </p>
+    </div>
+   
+
+    <div class="column column middle">
+
+      <table border="1">
+        <tr>
+            <td colspan="3"><b>1.姓名和联系方式</b></td>
+        </tr>
+        <tr>
+            <td align="right" width="150">真实姓名：</td>
+            <td width="350">
+                    <textarea rows="1" cols="25"></textarea><span style="color:black">* </span>
+            </td>
+            <td>
+                <form>
+                    <input type="radio" name="sex" value="男">男
+                    <input type="radio" name="sex" value="女">女
+                    </form> 
+            </td>
+            </tr>
+            
+            <tr>
+            <td align="right">电子邮箱：</td>
+            <td>
+                    <textarea rows="1" cols="25"></textarea><span style="color:black">* </span>
+            </td>
+            <td>
+                <p class="small"><b>非常重要!</b><br>
+                这是本工作室与您联系的首选方式哦,请填写真实.</p>
+                </td>
+        </tr>
+        
+        <tr>
+            <td align="right">电话：</td>
+            <td>
+                    <textarea rows="1" cols="25"></textarea><span style="color:black">* </span>
+
+            </td>
+            <td>电话为必须填写项</td>
+        </tr>
+        
+        <tr>
+            <td align="right">所实习部门：</td>
+            <td colspan="2">
+                    <form action="">
+                            <select name="depatment">
+                            <option value="研发">研发</option>
+                            <option value="销售">销售</option>
+                            </select>
+                            </form>
+            </td>
+            </tr>
+      
+        <tr>
+            <td align="right">实习岗位：</td>
+            <td>
+                    <textarea rows="1" cols="25"></textarea><span style="color:black">* </span>
+                
+            </td>
+            <td>研发部岗位：前端/后端/运维</td>
+        </tr>    
+        
+        <tr>
+            <td align="right">手机号码：</td>
+            <td>
+                    <textarea rows="1" cols="25"></textarea>
+
+            <td rowspan="3">&nbsp;</td>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="right">邮箱：</td>
+            <td>
+                <textarea rows="1" cols="25"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="right">性别取向：</td>
+            <td>
+                    <textarea rows="1" cols="25"></textarea>
+            </td>
+        </tr>
+         </table>
+           </div>
+
+        <div class="column column right">
+          <p class="a">这里是右栏</p>
+    </div>
+</div>
+
+<p class="center2">
+这是底栏
+</p>
+
+
+
+
+
+</body>
+</html>
